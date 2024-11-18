@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khadigi Affiliate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sauce+One:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+      font-family: 'Open Sauce One', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    }
+    .triangle {
+      clip-path: polygon(50% 50.8%, 90% 20%, 100.1% 0%, 100.1% 100%, 0% 100.3%, 0% 0%, 10% 20%);
+    }
+    .shadow-png {
+      filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) scale(0.75); /* Kombinasi floating dan scaling */
+      }
+      50% {
+        transform: translateY(-10px) scale(0.75); /* Floating ke atas dengan scale tetap */
+      }
+    }
+  </style>
+</head>
+<body class="text-black">
+  <!-- Hero Section -->
+  <section class="relative flex flex-col items-center justify-start min-h-screen px-4 text-center bg-gradient-to-b from-blue-50 to-blue-100">
+    <!-- Logo -->
+    <img src="logo copy.png" alt="Logo" class="w-20 h-20 mt-8">
+
+    <!-- Headline -->
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-10 text-blue-900">
+      Bagi Inspirasi, Raih Komisi dengan <br /> Khadigi Affiliate
+    </h1>
+
+    <!-- Subheadline -->
+    <p class="text-base md:text-lg text-gray-600 mt-3 leading-relaxed tracking-normal">
+      Komisi hingga jutaan cuma modal hp dan kuota, tanpa ribet!
+    </p>
+
+    <!-- CTA Button -->
+    <a href="#"
+        class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-blue-700 transition flex items-center justify-center">
+        Daftar Sekarang
+    </a>
+ 
+    <!-- Gambar dengan Shadow dan Floating -->
+    <img src="1-removebg-preview (1).png" alt="" srcset="" class="absolute bottom-[11em] -left-14 shadow-png floating">
+
+    <!-- Tambahkan Shadow dan Floating pada Gambar -->
+    <img src="2-removebg-preview (1).png" alt="" class="absolute shadow-png -bottom-6 z-40 -right-24 floating">
+
+    <img src="handsome-young-asian-male-student-texting-friend-holding-smartphone-stay-connected-using-mobile-phone-internet-scroll-social-network-online-white-wall-removebg-preview.png" alt="" class="relative z-30">
+
+    <!-- Segitiga Terbalik -->
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-white triangle z-50"></div>
+  </section>
+  <section class="h-screen"></section>
+</body>
+</html>

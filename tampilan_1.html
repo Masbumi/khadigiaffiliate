@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raih 10 JUTA pertama Anda dengan mudah melalui program afiliasi produk digital kami. Cocok untuk pemula!">
+  <meta name="keywords" content="afiliasi, penghasilan tambahan, bisnis online, produk digital, khadigi">
+  <title>Khadigi Affiliate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi masuk */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    /* Animasi tombol */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    .animate-bounce {
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+
+    /* Animasi melayang */
+    @keyframes floating {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .animate-floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+
+    /* Styling untuk pop-up notifikasi */
+    .notification-popup {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      animation: slideIn 0.5s forwards;
+      z-index: 9999;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideOut {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+    }
+
+    .notification-popup.exit {
+      animation: slideOut 0.5s forwards;
+    }
+
+    .notification-popup img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .notification-popup .message {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* Styling untuk Floating Action Button */
+    #fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    #fab {
+      background-color: #1DA1F2;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+
+    #fab:hover {
+      background-color: #0d8bf2;
+    }
+    .elementor{
+      display: none !important;
+    }
+    br{
+      display: none !important;
+    }
+    .page-title{
+      display: none !important;
+    }
+    #fi_2550207{
+      display: none !important;
+    }
+    #fab-container{
+      display: none !important;
+    }
+  </style>
+</head>
+<body class="">
+  <div class="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white font-sans overflow-x-hidden">
+      <header class="text-center py-2 px-4 mb-20">
+        <img src="https://i.imgur.com/wZjfPoF.png" alt="Logo" class="mx-auto animate-fade-in" style="width: 120px; height: auto;">
+          <p class="text-2xl md:text-4xl animate-fade-in delay-200 font-bold">Raih <span class=" text-3xl md:text-5xl font-extrabold text-yellow-300">10 JUTA</span> pertama dari Affiliate Produk Digital.</p>
+          <p class="text-md animate-fade-in delay-200 font-bold text-yellow-300 mb-6">Tanpa jago jualan, meskipun anda Pemula!</p>  
+          <p class="text-sm md:text-xl animate-fade-in delay-200  mb-2 ">Salah Satu produk kami sudah terjual hingga</p>
+          <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <p class="text-2xl md:text-4xl font-extrabold animate-fade-in mb-4">768+ <span class="font-normal text-xl md:text-2xl"><br class="hidden md:block">E Course Terjual</span></p>
+          <img src="https://i.imgur.com/Y5D8t9A.png" alt="Buku" class="mt-6 animate-fade-in animate-floating" style="width: 180px; height: auto;">
+          <div class="">
+              <p class="text-xl md:text-2xl font-normal animate-fade-in">Total Omset sampai <span class="font-extrabold text-2xl md:text-4xl underline decoration-yellow-500"><br>Rp 114.432.000</span></p>        
+          </div>
+          <img src="https://i.imgur.com/5V71tze.png" alt="Image" class="mx-auto mt-2 w-svh scale-110">
+          <div class="relative">
+              <div class="text-center mt-8">
+                  <a href="#" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-extrabold hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 animate-bounce shadow-lg">Daftar Sekarang</a>
+                  <div class="w-4 h-4 bg-white rounded-full absolute top-3 right-4 animate-ping"></div>
+              </div>        
+          </div>
+      </header>
+
+      <!-- CTA Section -->
+      <section class="text-white mx-4 md:mx-auto max-w-4xl mb-20 animate-fade-in delay-400">
+          <p class="text-lg  font-bold leading-relaxed mb-6 text-center text-slate-100">
+          Mau penghasilan tambahan tanpa ribet? Hanya dengan modal <span class="underline decoration-yellow-500 underline-offset-4">kuota dan HP</span>, Anda bisa menghasilkan <span class="underline decoration-green-500 underline-offset-4">uang</span> kapan saja dan dimana saja
+          </p>
+          <p class="text-center font-bold text-lg text-white">Affiliate produk digital adalah solusi yang tepat!</p>
+      </section>
+      
+    
+      <!-- Why Choose Us Section as Cards -->
+      <section class="mx-4 md:mx-auto max-w-5xl animate-fade-in delay-600">
+          <h3 class="text-2xl md:text-4xl font-bold text-center mb-8">Mengapa Harus Memilih Peluang Ini?</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+              <img src="https://i.imgur.com/ZexmiSO.png" alt="Bimbingan Mentor Profesional" class="w-full h-auto object-contain mb-4">
+              <p class="text-lg font-bold">Bimbingan Langsung dari Mentor Profesional</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+              <img src="https://i.imgur.com/87d1vGV.png" alt="Eksklusivitas Wilayah" class="w-full h-auto object-contain mb-4">
+              <p class="text-lg font-bold">Eksklusivitas Wilayah</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+              <img src="https://i.imgur.com/oFEbeVx.png" alt="Potensi Penghasilan Stabil" class="w-full h-auto object-contain mb-4">
+              <p class="text-lg font-bold">Potensi Penghasilan Stabil</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+              <img src="https://i.imgur.com/6FnQkpM.png" alt="Mudah Dijalankan" class="w-full h-auto object-contain mb-4">
+              <p class="text-lg font-bold">Mudah Dijalankan</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+              <p class="text-lg"><span class="font-bold">Garansi 100% Uang Kembali </span>- Jika dalam 30 hari Anda merasa program ini tidak memberikan hasil yang sesuai harapan, kami siap mengembalikan investasi Anda</p>
+          </div>
+          </div>
+      </section>
+    
+
+
+      <!-- Testimonials Section -->
+      <section class="mx-4 md:mx-auto max-w-5xl mt-10 animate-fade-in delay-1000">
+        <h5 class="text-2xl md:text-4xl font-bold text-center mb-6">Testimoni</h5>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <blockquote class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                <p class="italic text-lg leading-relaxed">
+                    "Saya benar-benar tidak punya pengalaman dalam bisnis digital sebelumnya. Pelatihan ini membimbing saya langkah demi langkah hingga saya paham dan berhasil. Sekarang, saya bisa mendapatkan penghasilan tambahan hanya dari HP saya di rumah. Terima kasih, ini benar-benar mengubah hidup saya!"
+                </p>
+                <footer class="text-purple-700 font-bold mt-4 text-right">— Rina Deliani Dewi, 23 Tahun, Milenial</footer>
+            </blockquote>
+            <blockquote class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                <p class="italic text-lg leading-relaxed">
+                    "Bisnis ini sempurna untuk saya yang mencari fleksibilitas dan tidak mau ribet soal kirim barang. Ditambah lagi, komunitas di sini sangat mendukung dan selalu memberi motivasi. Saya bisa bekerja kapan saja dan dimana saja. Sangat menyenangkan dan tentu saja, menguntungkan!"
+                </p>
+                <footer class="text-purple-700 font-bold mt-4 text-right">— Andi Gunawan Sutisna, 26 Tahun, Gen Z</footer>
+            </blockquote>
+            <blockquote class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                <p class="italic text-lg leading-relaxed">
+                    "Awalnya saya hanya mencari pemasukan tambahan, tetapi ternyata bisnis ini membawa lebih dari sekadar uang. Saya mendapat pengalaman, teman baru, dan bimbingan yang luar biasa. Terima kasih kepada tim mentor yang selalu membantu di setiap langkah perjalanan saya!"
+                </p>
+                <footer class="text-purple-700 font-bold mt-4 text-right">— Dian Sari, 29 Tahun, Pengusaha Muda</footer>
+            </blockquote>
+            <blockquote class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                <p class="italic text-lg leading-relaxed">
+                    "Program ini benar-benar berbeda dari yang lain. Dukungan dan panduan dari mentor membuat saya percaya diri, bahkan tanpa pengalaman di bisnis digital. Hasilnya nyata, saya sekarang lebih mandiri secara finansial dan bisa mengatur waktu lebih fleksibel."
+                </p>
+                <footer class="text-purple-700 font-bold mt-4 text-right">— Arief Rahman, 32 Tahun, Freelancer</footer>
+            </blockquote>
+        </div>
+      </section>
+    
+
+      <!-- Pricing Section -->
+      <section class="bg-white text-gray-800 rounded-lg shadow-lg mx-4 mt-20 md:mx-auto max-w-4xl p-8 animate-fade-in delay-800 relative">
+          <h4 class="text-2xl font-bold text-center text-purple-700 mb-6">Amankan Kuota Pelatihan Sekarang!</h4>
+          <p class="text-lg text-center mb-6">Cukup Investasi <span class="font-bold text-green-500">Rp. 149.000,-</span> untuk Pembelian Akses Produk Digital dan Hak Jual Kembali dengan Komisi 20% s.d 35%.</p>
+          <ul class="text-lg space-y-4 mb-8">
+              <li><img src="https://i.imgur.com/0AElhtU.png" alt="" srcset=""></li>
+              <li class="border-b-4 border-amber-500">📜 <strong>Manut Quran Bisa Kaya:</strong> 39 buah Video E Course, 3 buah E Book Ekslusif dan 3 Modul</li>
+              <li><img src="https://i.imgur.com/rB6LVnZ.png" alt="" srcset=""></li>
+              <li class="border-b-4 border-indigo-600">📜 <strong>AI Simply Magic:</strong> 49 Video E Course dan 6 buah E Modul dan E Book Ekslusif</li>
+              <li><img src="https://i.imgur.com/vecQLZ2.png" alt="" srcset=""></li>
+              <li class="border-b-4 border-rose-600">📜 <strong>Khalifa Digital Indonesia:</strong> 30 Video E Course Content Creator dan 2 E Book Ekslusif</li>
+          </ul>
+          <div class="bg-purple-100 text-purple-800 rounded-lg p-6 mt-6 relative">
+              <h5 class="text-xl font-bold mb-4">Bonus Eksklusif Pendaftaran Hari Ini</h5>
+              <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li>Pelatihan Digital Marketing <br>(senilai <span class="font-semibold">Rp 3 juta</span>)</li>
+                <li>Komisi <span class="font-semibold">20%</span> hingga <span class="font-semibold">35%</span></li>
+                <li>Akses Grup Komunitas Affiliate</li>
+                <li>Bimbingan Bisnis Affiliate Rutin Mingguan</li>
+                <li>Buku Fisik "Teknik Sadis Jualan Laris ala Digital Marketing" <br>(senilai <span class="font-semibold">Rp 80 ribu</span>)</li>
+                <li>Buku Fisik "Panduan Cerdas Jurus Jitu Jadi Content Creator" <br>(senilai <span class="font-semibold">Rp 80 ribu</span>)</li>
+              </ul>
+              <div class="h-44 w-full rounded-lg bg-purple-500 text-white flex items-center justify-center text-center px-2">
+                <p class="scale-110">
+                    <span>Total Nilai Bonus</span>
+                    <span class="line-through font-bold text-xl decoration-red-600 block">Rp 3.860.000</span>
+                    <span class="font-thin text-sm block">Khusus Hari ini hanya</span>
+                    <span class="text-green-300 underline decoration-red-500 font-extrabold text-3xl block">Rp 149.000</span>
+                </p>
+            </div>
+            
+          </div>
+          <div class="text-center mt-8">
+              <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-800 transition animate-bounce">Daftar Sekarang</a>
+          </div>
+      </section>
+      <section class="mx-4 md:mx-auto max-w-5xl mt-10 animate-fade-in delay-1000">
+        <h5 class="text-2xl md:text-4xl font-bold text-center mb-6">Pertanyaan yang Sering Diajukan</h5>
+        <div class="space-y-4">
+          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-4">
+            <h6 class="font-bold">1. Apakah saya perlu pengalaman sebelumnya?</h6>
+            <p>Tidak, program ini dirancang untuk pemula tanpa pengalaman.</p>
+          </div>
+          <!-- Tambahkan lebih banyak FAQ sesuai kebutuhan -->
+        </div>
+      </section>
+      
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-center text-white py-8 mt-10 animate-fade-in delay-1200">
+      <p class="text-sm">© 2024 Khadigi. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Pop-up Notifikasi -->
+    <div id="notification-container"></div>
+
+    <!-- Floating Action Button -->
+    <div id="fab-container">
+      <button id="fab" onclick="shareWebsite()">
+        <svg id="fi_2550207" enable-background="new 0 0 511.999 512" height="24" viewBox="0 0 511.999 512" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m506.252 12.1c-5.625-7.803-14.641-12.1-25.389-12.1-5.046 0-10.456.951-16.077 2.826l-435.428 145.142c-15.04 5.013-25.406 15.258-28.441 28.11-3.035 12.853 1.654 26.655 12.865 37.869 1.096 1.097 2.356 2.017 3.734 2.728l183.321 94.497 94.501 183.322c.71 1.377 1.63 2.637 2.726 3.733 9.009 9.01 19.399 13.773 30.049 13.774h.003c16.128 0 29.896-11.248 35.927-29.349l145.145-435.427c4.563-13.694 3.52-26.168-2.936-35.125zm-476.138 170.873c.574-2.433 3.92-4.94 8.73-6.544l413.285-137.762-243.017 243.017-175.54-90.485c-2.644-3.09-3.951-6.138-3.458-8.226zm305.468 290.193c-1.424 4.271-4.132 8.834-7.466 8.834-2.02 0-4.664-1.307-7.303-3.564l-90.488-175.539 243.024-243.023z"></path></svg>
+      </button>
+    </div>
+  </div>
+
+    <!-- Konten halaman Anda (tidak berubah) -->
+
+    <!-- Header Section -->
+
+
+  <!-- Script untuk Pop-up Notifikasi dan Share Function -->
+  <script>
+    const notifications = [
+      "Budi dari Jakarta baru saja mendaftar sebagai affiliate Khadigi",
+      "Siti dari Bandung membagikan websitenya",
+      "Andi dari Surabaya mendapatkan komisi pertama",
+      "Rina dari Medan meningkatkan penjualannya",
+      "Ali dari Yogyakarta bergabung dalam program afiliasi",
+      "Dewi dari Bali mencapai target bulan ini",
+      "Fajar dari Makassar mendapatkan bonus eksklusif",
+      "Linda dari Semarang berhasil menjual produk digital",
+      "Rudi dari Palembang merekomendasikan teman",
+      "Sari dari Malang aktif membagikan konten"
+    ];
+
+    const images = [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg",
+      "https://randomuser.me/api/portraits/men/3.jpg",
+      "https://randomuser.me/api/portraits/women/4.jpg",
+      "https://randomuser.me/api/portraits/men/5.jpg",
+      "https://randomuser.me/api/portraits/women/6.jpg",
+      "https://randomuser.me/api/portraits/men/7.jpg",
+      "https://randomuser.me/api/portraits/women/8.jpg",
+      "https://randomuser.me/api/portraits/men/9.jpg",
+      "https://randomuser.me/api/portraits/women/10.jpg"
+    ];
+
+    function showNotification(message, imageUrl) {
+      const container = document.getElementById('notification-container');
+
+      const notification = document.createElement('div');
+      notification.classList.add('notification-popup');
+
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.alt = 'User';
+
+      const text = document.createElement('div');
+      text.classList.add('message');
+      text.innerText = message;
+
+      notification.appendChild(img);
+      notification.appendChild(text);
+      container.appendChild(notification);
+
+      // Hapus notifikasi setelah beberapa detik
+      setTimeout(() => {
+        notification.classList.add('exit');
+        notification.addEventListener('animationend', () => {
+          notification.remove();
+        });
+      }, 5000);
+    }
+
+    // Tampilkan notifikasi secara acak setiap beberapa detik
+    function randomNotifications() {
+      const randomTime = Math.floor(Math.random() * (15000 - 5000 + 1)) + 5000; // Antara 5-15 detik
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * notifications.length);
+        const message = notifications[randomIndex];
+        const imageUrl = images[randomIndex];
+
+        showNotification(message, imageUrl);
+        randomNotifications();
+      }, randomTime);
+    }
+
+    // Fungsi untuk membagikan website
+    function shareWebsite() {
+      if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          text: 'Yuk, cek website ini!',
+          url: window.location.href
+        })
+        .then(() => console.log('Berhasil membagikan'))
+        .catch((error) => console.log('Gagal membagikan', error));
+      } else {
+        // Fallback untuk browser yang tidak mendukung Web Share API
+        alert('Browser Anda tidak mendukung fitur berbagi. Silakan salin tautan ini: ' + window.location.href);
+      }
+    }
+
+    // Mulai menampilkan notifikasi setelah halaman dimuat
+    window.onload = function() {
+      randomNotifications();
+    };
+  </script>
+
+</body>
+</html>
